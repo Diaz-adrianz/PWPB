@@ -1,0 +1,66 @@
+body {
+	height: 100vh;
+	margin: 0;
+	background: url(../assetz/jdm.jpg);
+	background-size: cover;
+	color: #e5e5e5;
+}
+
+fieldset {
+	width: 90%;
+	margin: 20px auto;
+	max-width: 768px;
+	background-color: #5e4dab;
+	border: 4px dashed #974ec2;
+	border-radius: 5px;
+}
+
+fieldset legend {
+	background-color: #974ec2;
+	padding: 5px 20px;
+	border-radius: 5px;
+	font-family: 'Quicksand';
+	font-weight: bold;
+}
+
+fieldset form {
+	width: 90%;
+	margin: auto;
+}
+
+td {
+	padding: 10px;
+}
+label {
+	font-family: 'Ubuntu';
+}
+input,
+select {
+	border: 2px solid transparent;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-family: 'JetBrains Mono';
+}
+input:focus,
+select:focus {
+	outline: none;
+	border-color: #f57dba;
+}
+
+form input[type='radio'] {
+	accent-color: #f57dba;
+}
+form button {
+	background-color: #f57dba;
+	color: whitesmoke;
+	cursor: pointer;
+	border: none;
+	border-radius: 50rem;
+	padding: 7px 13px;
+	font-size: 16px;
+	transition: 0.2s;
+	font-family: 'JetBrains Mono';
+}
+form button:hover {
+	background-color: #c2508b;
+}
