@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&family=JetBrains+Mono&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+		<title>Calculator | Diaz</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>My Calculator</h1>
+			<div id="output">0</div>
+			<table>
+				<tr>
+					<td><button onclick="clearOutput()">AC</button></td>
+					<td><button>+/-</button></td>
+					<td>
+						<button onclick="setNumber('%')">⁒</button>
+					</td>
+					<td><button onclick="setNumber('/')">&divide;</button></td>
+					<td>
+						<button class="material-icons" onclick="backspace()">
+							backspace
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td><button onclick="setNumber(7)">7</button></td>
+					<td><button onclick="setNumber(8)">8</button></td>
+					<td><button onclick="setNumber(9)">9</button></td>
+					<td><button onclick="setNumber('*')">&times;</button></td>
+					<td><button>&radic;</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="setNumber(4)">4</button></td>
+					<td><button onclick="setNumber(5)">5</button></td>
+					<td><button onclick="setNumber(6)">6</button></td>
+					<td><button onclick="setNumber('-')">&minus;</button></td>
+					<td><button>x&sup2;</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="setNumber(1)">1</button></td>
+					<td><button onclick="setNumber(2)">2</button></td>
+					<td><button onclick="setNumber(3)">3</button></td>
+					<td><button onclick="setNumber('+')">&plus;</button></td>
+					<td><button>x&sup3;</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="setNumber('.')">.</button></td>
+					<td><button onclick="setNumber(0)">0</button></td>
+					<td><button onclick="setNumber('(')">(</button></td>
+					<td><button onclick="setNumber(')')">)</button></td>
+					<td><button onclick="runIt()">=</button></td>
+				</tr>
+			</table>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
