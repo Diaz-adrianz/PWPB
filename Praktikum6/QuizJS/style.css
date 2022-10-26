@@ -3,15 +3,29 @@
 	margin: 0;
 	box-sizing: 0;
 	font-size: 18px;
-	font-family: 'Roboto';
+	font-family: 'Quicksand';
 	color: whitesmoke;
 }
 body {
-	background: url(../../assetz/win3.jpg);
+	background: url(../../assetz/win2.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
 	display: flex;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+::-webkit-scrollbar-track {
+	background: var(--secondary #212121);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--secondary, #393e46);
+	border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--accent, #fd7014);
 }
 
 .container {
@@ -22,42 +36,88 @@ body {
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-	background: rgba(212, 212, 212, 0.2);
-	backdrop-filter: blur(15px);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-	border-left: 1px solid rgba(255, 255, 255, 0.2);
-	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-	border-radius: 20px;
+	overflow: hidden;
+	border-radius: 1em;
 }
 
-.container h1 {
-	font-size: 2em;
-	font-weight: normal;
-}
 .container #output {
-	padding: 0.3em 0.5em;
-	margin: 0.5em 0;
-	font-size: 3em;
+	width: 100%;
+	margin: 0.2em 0 0.3em;
+	font-size: 5.5em;
 	text-align: end;
-	border: 1px solid white;
 	border-radius: 10px;
-}
-.container table {
-	flex: 1;
-}
-button {
+	overflow: auto;
 	background: none;
 	border: none;
-	padding: 0.5em;
-	font-size: 2em;
+	resize: none;
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.container #output.fade {
+	animation: fade 0.5s ease-out forwards;
+}
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.container #output:focus {
+	outline: none;
+}
+.container #output::-webkit-scrollbar {
+	width: 3px;
+}
+.container .buttons {
+	flex: 1;
+	border-radius: 1em;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	gap: 0.75em;
+}
+button {
+	background: #333;
+	border: none;
+	font-size: 1.5em;
 	text-align: center;
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
+	border-radius: 0.7em;
 	transition: 0.1s;
+	display: block;
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+		rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+		rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+		rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+		rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#kurung {
+	gap: 0.5em;
+	display: flex;
+}
+#kurung > button {
+	flex: 1;
+}
+button#run,
+button#ac {
+	background: #fb9523;
+}
+button#ac {
+	width: 100%;
+	column-span: 2;
+}
+button#del {
+	background: red;
+}
+button.opr,
+button.attr,
+button.oprspec {
+	background: #a9a9a9;
+	color: #212121;
 }
 button:hover {
-	background: rgba(212, 212, 212, 0.2);
+	transform: scale(1.1);
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 button:active {
 	transform: scale(0.9);
@@ -66,5 +126,8 @@ button:active {
 @media only screen and (max-width: 400px) {
 	* {
 		font-size: 16px;
+	}
+	.container {
+		border-radius: 0;
 	}
 }
