@@ -1,0 +1,18 @@
+p {
+	color: salmon;
+	font-size-adjust: 7;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: palegreen;
+}
+body {
+	background-image: url(../assetz/mac2.jpg);
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+p#hewan {
+	color: darksalmon;
+	font-size-adjust: 1;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: khaki;
+}
