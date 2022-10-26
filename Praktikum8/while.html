@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>While loop JS | DIAZ</title>
+		<link rel="stylesheet" href="hias.css" />
+	</head>
+	<body>
+		<h2 class="head">Perulangan while pada array</h2>
+
+		<p id="ulangwhile"></p>
+
+		<script>
+			let siswa = ['Farhan', 'Sigit', 'Zaki', 'Rian', 'Bayu'];
+			let i = 0;
+			let txt = '';
+
+			while (siswa[i]) {
+				txt += siswa[i] + '</br>';
+				i++;
+			}
+
+			document.getElementById('ulangwhile').innerHTML = txt;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>For loop JS | DIAZ</title>
+		<link rel="stylesheet" href="hias.css" />
+	</head>
+	<body>
+		<h2 class="head">Perulangan For pada JavaScript</h2>
+
+		<p id="for"></p>
+
+		<script>
+			alert('Silahkan masukkan angka');
+			let n = parseInt(prompt('Masukkan nilai n'));
+			let text = '';
+			let i;
+
+			for (i = 1; i < n; i++)
+				text += 'Mengulang angka sebelum nilai n : ' + i + '</br>';
+
+			document.getElementById('for').innerHTML = text;
+		</script>
+	</body>
+</html>

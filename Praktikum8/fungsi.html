@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JS Function | DIAZ</title>
+		<link rel="stylesheet" href="hias.css" />
+	</head>
+	<body>
+		<h2 class="head">Penggunaan fungsi</h2>
+
+		<p id="fungsi"></p>
+
+		<script>
+			function hitungLuasAlas(p, l) {
+				let luas = p * l;
+				return luas;
+			}
+
+			function hitungVolume(la, t) {
+				let vol = (la * t) / 2;
+				return vol;
+			}
+
+			let panjang = 5,
+				lebar = 3,
+				tinggi = 4,
+				luasAlas,
+				volume;
+
+			luasAlas = hitungLuasAlas(panjang, lebar);
+			volume = hitungVolume(luasAlas, tinggi);
+			alert('ini adalah luas alas => ' + luasAlas);
+			alert('ini adalah volume => ' + volume);
+		</script>
+	</body>
+</html>

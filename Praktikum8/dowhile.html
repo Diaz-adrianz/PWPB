@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Do While loop JS | DIAZ</title>
+		<link rel="stylesheet" href="hias.css" />
+	</head>
+	<body>
+		<h2 class="head">Perulangan Do While</h2>
+
+		<p id="dowhile"></p>
+
+		<script>
+			// persiapan variable
+			let i = 9;
+			let txt = '';
+
+			// lakukan cetak
+			do {
+				txt += '</br>The number is ' + i;
+				i--;
+				// jika i lebih besar dari 10 maka lanjutttt
+			} while (i > 10);
+
+			// tampilkan
+			document.getElementById('dowhile').innerHTML = txt;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans';
+	color: white;
+}
+body {
+	background: url(../assetz/win3.jpg);
+	background-size: cover;
+	min-height: 100vh;
+	background-position: center;
+	padding: 1rem;
+	background-repeat: no-repeat;
+}
+
+.head {
+	margin-bottom: 1rem;
+}

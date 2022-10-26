@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>For in loop JS | DIAZ</title>
+		<link rel="stylesheet" href="hias.css" />
+	</head>
+	<body>
+		<h2 class="head">Perulangan For In pada JavaScript</h2>
+		<p>Pernyataan for in mengulang melalui prperti pada objek</p>
+
+		<p id="forinloop"></p>
+
+		<script>
+			let text = '';
+			let orang = { fname: 'Rusdi', lname: 'Ngawi', usia: 88 };
+			let x;
+
+			for (x in orang) text += orang[x] + ' ';
+
+			document.getElementById('forinloop').innerHTML = text;
+		</script>
+	</body>
+</html>
