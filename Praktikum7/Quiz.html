@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Demo Jikalau Lainnya | DIAZ</title>
+	</head>
+	<body background="../assetz/win3.jpg">
+		<script>
+			let operation = prompt(
+				'OPERASI ARIMATIKA\nSilahkan pilih salah satu operasi berikut\n\n +  -  x  /  %'
+			);
+			let bil1 = parseInt(prompt('Masukkan bilangan pertama'));
+			let bil2 = parseInt(prompt('Masukkan bilangan kedua'));
+
+			if (bil1 == NaN || bil2 == NaN) {
+				alert('Nilai yang dimasukkan bukan angka!');
+			} else {
+				let hasil;
+				switch (operation) {
+					case '+':
+						hasil = bil1 + bil2;
+						break;
+					case '-':
+						hasil = bil1 - bil2;
+						break;
+					case 'x':
+						hasil = bil1 * bil2;
+						break;
+					case '/':
+						hasil = bil1 / bil2;
+						break;
+					case '%':
+						hasil = bil1 % bil2;
+						break;
+					default:
+						break;
+				}
+
+				let tampikan = alert(
+					`Hasil operasi aritmatika ${bil1} ${operation} ${bil2}\n>> ${hasil}`
+				);
+			}
+		</script>
+	</body>
+</html>

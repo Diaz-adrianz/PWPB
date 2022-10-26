@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Demo Jikalau 2 | DIAZ</title>
+	</head>
+	<body
+		background="../assetz/win3.jpg"
+		style="
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 100vh;
+			margin: 0;
+			padding: 1rem;
+			box-sizing: border-box;
+		"
+	>
+		<font face="Jetbrains Mono" color="white">
+			<h3>
+				Akan muncul tulisan "Selamat pagi!" jikalau waktu kurang dari 10:100
+			</h3>
+			<p id="demo">Selamat siang!</p>
+		</font>
+
+		<script>
+			if (new Date().getHours() < 10)
+				document.getElementById('demo').innerHTML = 'Selamat pagi!';
+		</script>
+	</body>
+</html>
