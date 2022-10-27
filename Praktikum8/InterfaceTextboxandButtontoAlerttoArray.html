@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Interface JS | DIAZ</title>
+		<link rel="stylesheet" href="hias2.css" />
+	</head>
+	<body>
+		<h2 class="head">Interface pada JavaScript</h2>
+
+		<input type="text" name="nilai" id="nilai" />
+		<input type="text" name="nilai" id="nilai2" />
+		<input type="button" value="Ambil nilai" onclick="ambilNilai()" />
+		<script>
+			function ambilNilai() {
+				let obj1 = document.getElementsByName('nilai')[0];
+				let obj2 = document.getElementsByName('nilai')[1];
+
+				let n1 = obj1.value;
+				let n2 = obj2.value;
+
+				alert('Nilai pertama adalah ' + n1);
+				alert('Nilai kedua adalah ' + n2);
+			}
+		</script>
+	</body>
+</html>

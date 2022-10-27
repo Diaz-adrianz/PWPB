@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Interface JS | DIAZ</title>
+		<link rel="stylesheet" href="hias2.css" />
+	</head>
+	<body>
+		<h2 class="head" style="margin-top: 10rem">
+			Interface Function pada JavaScript
+		</h2>
+
+		<input type="text" name="nilai" id="nilai" placeholder="Masukkan nilai" />
+		<input type="button" value="Ambil nilai" onclick="ambilNilai()" />
+		<input type="text" name="hasil" id="hasil" />
+
+		<script>
+			// deklarasi fungsi
+			function ambilNilai() {
+				// Variable bernilai elemen html
+				let obj1 = document.getElementsByTagName('input')[0];
+				let obj2 = document.getElementsByTagName('input')[1];
+				let obj3 = document.getElementsByTagName('input')[2];
+
+				// Ambil value element html nya
+				let val1 = obj1.value;
+				let val2 = obj2.value;
+
+				// Tampilkan
+				obj3.value = val1 + val2;
+			}
+		</script>
+	</body>
+</html>

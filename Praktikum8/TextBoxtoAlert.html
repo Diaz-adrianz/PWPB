@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Interface JS | DIAZ</title>
+		<link rel="stylesheet" href="hias2.css" />
+	</head>
+	<body>
+		<h2 class="head" style="margin-top: 10rem">
+			Interface Function pada JavaScript
+		</h2>
+
+		<label for="">
+			Ketikan disini
+			<input type="text" name="nama" id="nama" onchange="katakanHalo()" />
+		</label>
+
+		<script>
+			// deklarasi fungsi
+			function katakanHalo() {
+				// variabel bernilai nama dari input user
+				let nama = document.getElementById('nama').value;
+				// tampilkan nama
+				alert('Halo banh ' + nama);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>PBO function JS | DIAZ</title>
+		<link rel="stylesheet" href="hias2.css" />
+	</head>
+	<body>
+		<h2 class="head">Fungsi PBO pada JavaScript</h2>
+
+		<script>
+			function SegiEmpat() {
+				this.panjang = 0;
+				this.lebar = 0;
+				this.hitungluas = () => {
+					return this.panjang * this.lebar;
+				};
+				this.hitungKeliling = () => {
+					return 2 * (this.panjang + this.lebar);
+				};
+			}
+
+			let s = new SegiEmpat();
+			s.panjang = 4;
+			s.lebar = 3;
+
+			alert('Luas adalah ' + s.hitungluas() + 'cm2');
+			alert('Dan kelilingnya adalah ' + s.hitungKeliling() + 'cm');
+		</script>
+	</body>
+</html>
