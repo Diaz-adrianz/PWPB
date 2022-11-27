@@ -1,0 +1,44 @@
+body {
+	background: url(../media/10-12.jpg);
+}
+
+#atas {
+	background: url(../media/bigsur.jpg);
+	height: 268px;
+	width: 80%;
+	margin: -5px auto 0;
+	position: relative;
+	display: block;
+	background-size: cover;
+	color: whitesmoke;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+h1 {
+	font-family: 'Quicksand';
+	padding-top: 40px;
+	text-align: center;
+	text-shadow: -5px -5px 5px lavender;
+}
+img#p_photo {
+	float: left;
+	clear: both;
+	position: relative;
+	border-radius: 5%;
+	border: dotted;
+	margin-top: 10px;
+	margin-left: 200px;
+}
+#profil {
+	width: 400px;
+	height: 500px;
+	margin: 10px 200px 0 480px;
+	display: block;
+	font-family: 'Ubuntu';
+	color: gray;
+	background-color: thistle;
+	padding: 10px;
+	opacity: 0.8;
+	border-radius: 5%;
+}

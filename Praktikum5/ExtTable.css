@@ -1,0 +1,37 @@
+body {
+	background: url(../media/bigsur.jpg);
+	display: flex;
+	height: 100vh;
+	font-family: 'Quicksand';
+}
+
+table {
+	margin: auto;
+}
+table,
+td,
+th {
+	border: 1px solid salmon;
+	border-top: 2px solid red;
+	border-right: 2px groove yellow;
+	border-left: 2px dashed green;
+	border-bottom: 2px dotted grey;
+}
+
+td {
+	background-color: #7d4fce;
+	color: snow;
+	text-align: right;
+	height: 30px;
+	vertical-align: middle;
+	padding: 15px;
+}
+
+th {
+	background-color: #ffcf54;
+	color: #ff7431;
+	text-align: right;
+	height: 50px;
+	vertical-align: bottom;
+	padding: 15px;
+}

@@ -1,0 +1,47 @@
+body {
+	background: url('../media/bigsur.jpg');
+	background-size: cover;
+	font-family: 'Ubuntu';
+}
+
+h2 {
+	text-decoration: line-through;
+	font-family: 'Quicksand';
+}
+h3 {
+	text-decoration: underline;
+}
+h4 {
+	letter-spacing: -1px;
+	color: lightsalmon;
+	font-family: 'Quicksand';
+}
+p {
+	color: #b6d8ee;
+}
+em {
+	letter-spacing: 0.5cm;
+	text-decoration: overline;
+	color: lightsalmon;
+}
+
+a {
+	text-decoration: none;
+	color: #ffc100;
+}
+p.duasenti {
+	word-spacing: 2cm;
+}
+p.limapiksel {
+	word-spacing: 5px;
+}
+
+p,
+h4,
+em,
+h2,
+h3,
+a {
+	text-indent: 2cm;
+	background-color: #7756ce;
+}

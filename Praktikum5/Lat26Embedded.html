@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu&display=swap"
+			rel="stylesheet"
+		/>
+
+		<style>
+			#Bubblegum {
+				height: 28%;
+				background-color: mistyrose;
+				border: 2px solid;
+				font-family: 'Quicksand';
+				font-weight: bold;
+				cursor: crosshair;
+			}
+			#Lemonade {
+				background-color: antiquewhite;
+				border: 2px dashed salmon;
+				font-family: 'Ubuntu';
+			}
+			#Mint {
+				height: 28%;
+				background-color: lavenderblush;
+				font-family: 'Quicksand';
+				font-weight: bold;
+			}
+			.kotak {
+				text-shadow: 3px 2px 5px grey;
+				text-align: center;
+				size: 64pt;
+				color: crimson;
+			}
+			input#tombol {
+				color: darkred;
+				background: lightcoral;
+				border: 2px double indianred;
+				font-size: 18px;
+				font-weight: bold;
+			}
+			input#tombol:hover {
+				color: yellow;
+				background: black;
+			}
+			.username {
+				color: skyblue;
+				background: blue;
+				font-size: 12px;
+			}
+		</style>
+
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="Bubblegum" class="kotak">Login</div>
+		<div id="Lemonade">
+			<form action="" name="login">
+				<table align="center">
+					<tr>
+						<td>
+							<label for="username" class="username">Username</label>
+						</td>
+						<td>
+							<input
+								type="text"
+								name="username"
+								id="username"
+								placeholder="Namamu"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="password" class="password">Password</label>
+						</td>
+						<td>
+							<input type="password" name="password" id="password" />
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="submit" value="Login" id="tombol" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="Mint" class="kotak">Tetap Cumungut</div>
+	</body>
+</html>

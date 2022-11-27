@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Noto Sans', sans-serif;
+}
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background: var(--primary);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--secondary);
+	border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+body {
+	color: #f2ffff;
+	background-color: #141414;
+}
+h1,
+h2,
+h3 {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+main {
+	max-width: 1024px;
+	width: 90%;
+	margin: 50px auto;
+	padding: 20px;
+	background-image: url(../media/paper.jpg);
+	background-size: cover;
+	background-color: #f2f2f2;
+	color: #212121;
+	border-radius: 20px;
+}
+h1#title {
+	font-size: 5em;
+	position: relative;
+	line-height: 1em;
+}
+
+h1#title span {
+	font-size: inherit;
+	line-height: inherit;
+	background: #48bf91;
+	border-radius: 10px;
+	display: inline-block;
+	margin: auto;
+}
+
+/* figure  */
+section#tribute-top {
+	display: flex;
+	gap: 50px;
+	padding: 40px 20px;
+	border-bottom: 5px double #212121;
+}
+main figure#img-div {
+	flex: 1;
+	border-radius: 20px;
+}
+figure#img-div img {
+	height: 300px;
+	object-fit: cover;
+	width: 100%;
+	border-radius: inherit;
+}
+figure#img-div figcaption {
+	font-size: 14px;
+	font-style: italic;
+}
+section#tribute-top > div {
+	flex: 2;
+}
+section#tribute-top > div > * {
+	text-align: left;
+}
+
+/* timeline */
+section h2 {
+	font-size: 2em;
+}
+section#tribute-info {
+	width: 100%;
+	padding: 30px;
+}
+section ul {
+	max-width: 660px;
+	margin: 40px auto;
+}
+section ul li {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+section blockquote {
+	font-style: italic;
+	margin: 50px 0 30px 0;
+}
+main h3 {
+	width: 100%;
+	border-top: 5px double #212121;
+	padding: 30px 0;
+}
+a {
+	color: #009ffd;
+}
+a:hover {
+	color: #48bf91;
+}
+
+@media only screen and (max-width: 600px) {
+	* {
+		font-size: 14px;
+	}
+	main {
+		width: 97%;
+		margin: 10px auto;
+		padding: 10px;
+	}
+	section#tribute-top {
+		flex-direction: column;
+		padding: 5px 20px 20px;
+		gap: 0;
+	}
+	h1#title {
+		font-size: 4em;
+		margin-bottom: 0.2em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+
+	main figure#img-div {
+		padding: 20px 0;
+	}
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Tabel form</title>
+	</head>
+	<body background="../Praktikum2/bigsur.jpg">
+		<form action="">
+			<font face="VT323" color="wheat">
+				<table
+					cellpadding="20px"
+					background="../media/693066.jpg"
+					align="center"
+					border="10"
+				>
+					<tr>
+						<td>
+							<table border="0" cellpadding="5px">
+								<tr>
+									<td colspan="3" align="center">
+										<h1>Pendaftaran</h1>
+									</td>
+								</tr>
+								<tr>
+									<td>Nama Pengguna</td>
+									<td>:</td>
+									<td>
+										<input type="text" name="username" id="username" />
+									</td>
+								</tr>
+								<tr>
+									<td>Sandi</td>
+									<td>:</td>
+									<td>
+										<input type="password" name="pass" id="pass" />
+									</td>
+								</tr>
+								<tr>
+									<td>Jenis Kelamin</td>
+									<td>:</td>
+									<td>
+										<label>
+											<input type="radio" name="kelamin" value="pria" />
+											Pria
+										</label>
+										<label>
+											<input type="radio" name="kelamin" value="wanita" />
+											Wanita
+										</label>
+										<label>
+											<input
+												type="radio"
+												name="kelamin"
+												value="tidakkeduanya"
+											/>
+											<del>Tidak keduanya</del>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>Tanggal lahir</td>
+									<td>:</td>
+									<td>
+										<select name="tanggal" id="tanggal">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+										<select name="bulan" id="bulan">
+											<option value="januari">Januari</option>
+											<option value="februari">Februari</option>
+											<option value="maret">Maret</option>
+											<option value="april">April</option>
+										</select>
+										<select name="tahun" id="tahun">
+											<option value="1998">1998</option>
+											<option value="1999">1999</option>
+											<option value="2000">2000</option>
+											<option value="2001">2001</option>
+											<option value="2002">2002</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2"></td>
+									<td>
+										<button type="submit">Simpan</button>
+										<button type="reset">Batal</button>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</font>
+		</form>
+	</body>
+</html>

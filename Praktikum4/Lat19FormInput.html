@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Macam-macam input pada form</title>
+	</head>
+	<body background="../Praktikum2/bigsur.jpg">
+		<font color="ivory">
+			<p>Ini adalah input password</p>
+			<label>
+				Password
+				<input type="password" name="pswd" maxlength="8" />
+			</label>
+
+			<p>Ini adalah textarea tersembunyi</p>
+			<label for="">
+				Nama
+				<input type="textarea" name="negara" />
+				<input type="hidden" name="negara" value="Israel" />
+				<input type="submit" value="submit" />
+			</label>
+
+			<p>Ini adalah upload button</p>
+			<label for="">
+				<font face="Lobster">Upload foto</font>
+				<input type="file" name="pic" accept=".png/.jpg/.jpeg" />
+			</label>
+		</font>
+	</body>
+</html>
